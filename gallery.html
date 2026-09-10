@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Galeri Foto - Tuan Shenn</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="page-header">
+
+        <a href="index.html" class="back-button">
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 12H5"></path>
+                <path d="M11 6l-6 6 6 6"></path>
+            </svg>
+
+            Kembali
+
+        </a>
+
+        <h1>Galeri Foto</h1>
+
+        <p>Kumpulan foto</p>
+
+    </header>
+
+
+    <main class="gallery">
+
+        <img
+            src="images/foto1.jpg"
+            alt="Foto 1"
+            class="gallery-image"
+            onclick="openImage(this)"
+        >
+
+        <img
+            src="images/foto2.jpg"
+            alt="Foto 2"
+            class="gallery-image"
+            onclick="openImage(this)"
+        >
+
+        <img
+            src="images/foto3.jpg"
+            alt="Foto 3"
+            class="gallery-image"
+            onclick="openImage(this)"
+        >
+
+        <img
+            src="images/foto4.jpg"
+            alt="Foto 4"
+            class="gallery-image"
+            onclick="openImage(this)"
+        >
+        
+        <img
+            src="images/foto5.jpg"
+            alt="Foto 5"
+            class="gallery-image"
+            onclick="openImage(this)"
+        >
+
+        <img
+            src="images/foto6.jpg"
+            alt="Foto 6"
+            class="gallery-image"
+            onclick="openImage(this)"
+        >
+
+    </main>
+
+
+    <footer>
+
+        <p>© 2026 Suki</p>
+
+    </footer>
+
+
+    <!-- IMAGE PREVIEW -->
+
+    <div
+        class="image-preview"
+        id="imagePreview"
+        onclick="closeImage()"
+    >
+
+        <button
+            class="close-preview"
+            onclick="event.stopPropagation(); closeImage()"
+            aria-label="Tutup preview"
+        >
+            ×
+        </button>
+
+        <img
+            id="previewImage"
+            src=""
+            alt="Preview"
+        >
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

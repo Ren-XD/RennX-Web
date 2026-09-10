@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Profil Renn Takahashi</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="hero">
+
+        <img src="images/foto.jpg" alt="Foto profil" class="profile-photo">
+
+        <h1>Ren Takahashi</h1>
+
+        <p class="subtitle">Pelajar - Otomotif - Designer - Programer - Animation</p>
+
+    </header>
+
+
+    <main>
+
+        <section class="menu">
+
+            <a href="data-diri/data-diri.html" class="menu-button">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8z"></path>
+                    <path d="M4 21a8 8 0 0 1 16 0"></path>
+                </svg>
+
+                <span>Data Diri</span>
+
+            </a>
+
+
+            <a href="gallery.html" class="menu-button">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                    <circle cx="8.5" cy="9.5" r="1.5"></circle>
+                    <path d="M3 16l5-5 4 4 2-2 7 5"></path>
+                </svg>
+
+                <span>Galeri Foto</span>
+
+            </a>
+
+        </section>
+
+
+        <section id="tentang" class="card">
+
+    <h2>Musik Saya</h2>
+
+    <div class="music-player">
+
+        <div class="vinyl" id="vinyl">
+            <div class="vinyl-label">
+                <div class="vinyl-hole"></div>
+            </div>
+        </div>
+
+        <div class="music-content">
+
+            <h3>Jatuh Suka</h3>
+
+            <p class="music-artist">
+                Tulus
+            </p>
+
+            <div class="music-controls">
+
+    <span class="control-line"></span>
+
+    <button class="play-button" id="playMusic">
+        ▶
+    </button>
+
+    <span class="control-line"></span>
+
+            </div>
+            
+            <div class="music-time">
+    <span id="currentTime">00:00</span>
+    <span>/</span>
+    <span id="duration">00:00</span>
+            </div>
+
+            <div class="lyrics-box">
+    <p id="lyrics"></p>
+
+    <svg id="typingCursor" class="typing-cursor" viewBox="0 0 2 20" aria-hidden="true">
+        <line x1="1" y1="0" x2="1" y2="20"></line>
+    </svg>
+            </div>
+
+        </div>
+
+    </div>
+
+    <audio id="music" preload="auto">
+    <source src="jatuh-suka.mp3" type="audio/mpeg">
+</audio>
+
+        </section>
+        
+        <section class="card imo-card">
+
+    <img src="images/imocuy.jpg" alt="Imo" class="imo-photo">
+
+    <h2>Alhamdulillah Imok</h2>
+
+    <div class="imo-caption">
+
+    <p>
+        Setelah sekian lama menjalani kehidupan yang penuh lika-liku,
+        akhirnya saya telah resmi IMO. Sebuah pencapaian yang mungkin
+        bagi sebagian orang terlihat sederhana, tetapi bagi saya
+        merupakan perjalanan panjang yang dipenuhi perjuangan,
+        kesabaran, dan tentu saja rasa penasaran terhadap kapan
+        sebenarnya kalian akan menyusul.
+    </p>
+
+    <p>
+        Saya tidak bermaksud menyindir siapa-siapa. Kalau ada yang
+        merasa tersindir, mungkin itu hanya kebetulan belaka. Saya
+        hanya ingin menyampaikan bahwa kesempatan untuk IMO itu
+        sebenarnya terbuka lebar bagi siapa pun. Tinggal kemauan,
+        usaha, dan sedikit keberanian untuk menghadapi kenyataan
+        bahwa waktu terus berjalan sementara kalian masih berada
+        di tempat yang sama.
+    </p>
+
+    <p>
+        Jadi untuk teman-teman yang sampai sekarang masih belum IMO,
+        tidak perlu berkecil hati. Setiap orang memang punya waktunya
+        masing-masing. Ada yang datang lebih cepat, ada yang datang
+        belakangan, dan ada juga yang masih sibuk mengatakan
+        “sebentar lagi” sampai akhirnya tahun berganti berkali-kali.
+    </p>
+
+    <p>
+        Saya sendiri hanya bisa bersyukur atas pencapaian ini.
+        Semoga setelah melihat kabar bahagia ini, kalian mendapatkan
+        motivasi untuk segera menyusul. Jangan biarkan saya terlalu
+        lama menunggu di garis depan sendirian.
+    </p>
+
+    <p>
+        Akhir kata, Alhamdulillah saya sudah IMO.
+    </p>
+
+    <p>
+        <strong>Kapan anda IMO?</strong>
+    </p>
+
+    <p>
+        Saya tunggu kabar baiknya. Jangan cuma dibaca sambil tersenyum,
+        kemudian kembali melanjutkan kehidupan seperti tidak terjadi
+        apa-apa. 😌
+    </p>
+
+</section>
+
+    </main>
+
+
+    <footer>
+
+        <p>© 2026 Suki</p>
+
+    </footer>
+
+
+    <!-- Tombol Chat -->
+
+    <div class="chat-button" onclick="toggleChat()" aria-label="Buka chat">
+
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 11.5a8 8 0 0 1-8 8 8.7 8.7 0 0 1-3.5-.7L4 20l1.2-3.5A8 8 0 1 1 20 11.5z"></path>
+            <path d="M8 11.5h.01M12 11.5h.01M16 11.5h.01"></path>
+        </svg>
+
+    </div>
+
+
+    <!-- Kotak Chat -->
+
+    <div class="chat-box" id="chatBox">
+
+        <div class="chat-header">
+
+            <div class="chat-title">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="5" y="4" width="14" height="16" rx="3"></rect>
+                    <circle cx="9" cy="11" r="1"></circle>
+                    <circle cx="15" cy="11" r="1"></circle>
+                    <path d="M9 16h6"></path>
+                </svg>
+
+                <span>Renn AI</span>
+
+            </div>
+
+
+            <button onclick="toggleChat()" aria-label="Tutup chat">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M6 6l12 12M18 6L6 18"></path>
+                </svg>
+
+            </button>
+
+        </div>
+
+
+        <div class="chat-messages" id="chatMessages">
+
+            <div class="bot-message">
+
+                Halo! Aku Renn AI.<br>
+                Ada yang ingin kamu ketahui?
+
+            </div>
+
+        </div>
+
+
+        <div class="chat-input">
+
+            <input
+                type="text"
+                id="userInput"
+                placeholder="Tulis pesan..."
+                onkeydown="if(event.key === 'Enter') sendMessage()"
+            >
+
+            <button onclick="sendMessage()" aria-label="Kirim pesan">
+
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 20L21 12 3 4l3 7 9 1-9 1-3 7z"></path>
+                </svg>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
