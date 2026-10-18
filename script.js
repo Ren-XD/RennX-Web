@@ -163,7 +163,7 @@
 
     // Kosong = ditampilkan redup / "belum diisi"
     const CONTACT = {
-        email: '',
+        email: 'rennxianodarham@gmail.com',
         location: 'Indonesia',
         social: {
             github: '',
